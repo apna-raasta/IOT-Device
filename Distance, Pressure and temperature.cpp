@@ -26,7 +26,7 @@ void loop() {
  duration = pulseIn(echoPin, HIGH);
  lcd.print("Hello");
   Serial.print("Temperature = ");
-    Serial.print(bmp.readTemperature());
+    Serial.print(bmp.readRawTemperature()/1000);
     Serial.println(" *C");
     
     Serial.print("Pressure = ");
@@ -42,15 +42,13 @@ void loop() {
     Serial.print("Pressure at sealevel (calculated) = ");
     Serial.print(bmp.readSealevelPressure());
     Serial.println(" Pa");
-        delay(1000);
  distance = (duration/2) / 29.1;
  Serial.print("Distance");
 Serial.println (distance);
  if (distance <= 150){
- tone(9,400,100);
+ tone(9,250,1000);
  }
  else {
  noTone(9);
  }
- delay(50);
 }
