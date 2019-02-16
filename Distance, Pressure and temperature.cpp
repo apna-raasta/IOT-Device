@@ -44,6 +44,7 @@ void loop() {
     Serial.println(" Pa");
         delay(1000);
  distance = (duration/2) / 29.1;
+ Serial.print("Distance");
 Serial.println (distance);
  if (distance <= 150){
  tone(9,400,100);
