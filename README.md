@@ -2,11 +2,11 @@
 
 # Blynk 
 
-Blynk for Device's data to be shared in Portable devices.
+* Blynk for Device's data to be shared in Portable devices.
 
 # Custom Library
 
-Distance, Gyro, Pressure and temperature for measuring the same.
+* Distance, Gyro, Pressure and temperature for measuring the same.
 
 # Commands used for Networking (AT) Commands
 
@@ -19,4 +19,4 @@ Distance, Gyro, Pressure and temperature for measuring the same.
 1. Gsm Module
 1. Thermal Sensor
 
-Created by team Avocets
+## Created by team Avocets
